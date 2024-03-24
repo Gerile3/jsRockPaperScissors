@@ -3,9 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Jajanken! - Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="profile" id="player-profile">
+        <img src="./pics/Screenshot 2024-03-24 205422.png" alt="user profile picture">
+        <h3>Player</h3>
+        <div id="user-wins">0</div>
+    </section>
+    <section class="profile" id="computer-profile">
+        <img src="./pics/friendly-robot-to-use-as-profile-picture.png" alt="ai profile picture">
+        <h3>Computer</h3>
+        <div id="computer-wins">0</div>
+    </section>
+    <div id="play-btn-container">
+        <button id="play-game">Play Game!</button>
+    </div>
+    <div id="choice-zone" class="hide">
+        <p>Make Your Choice!</p>
+        <button id="rock">Rock</button>
+        <button id="paper">Paper</button>
+        <button id="scissors">Scissors</button>
+    </div>
+    <div id="result-zone">
+        <div id="result" class="hide"></div>
+        <button id="clear-btn" class="hide">Restart</button>
+    </div>
     <script src="game.js"></script>
 </body>
 </html>
